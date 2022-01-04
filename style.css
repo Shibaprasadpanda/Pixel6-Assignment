@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+.form {
+  font-family: 'Roboto Slab', serif;
+  font-size: 95% ;
+  line-height: 1em;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 40px;
+  background-color: lightcoral;
+}
+
+
+.textField {
+  display :block;
+  padding: 10px;
+  width: 90%;
+  margin: 5px 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(241, 241, 198);
+}
+.phone_number {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone_detail {
+  display: flex;
+  align-items: center;
+}
+#error {
+  color: red,
+}
+.btn{
+  font-family: 'Roboto Slab', serif;
+  background-color: coral;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- form to take user information-->
+  <form class="form" id="form1">
+    Enter Your FullName: <input name="full_name" class="textField" type="text">
+    <p id="full_name_error"></p>
+     Enter Your Email:
+    <input name="email" class="textField" type="email">
+    <p id="email_error"></p>
+    Phone number:
+    <div class="phone_number">
+      <div class="phone_detail">
+        <img id='logo' width="50px" src="" alt="sim">
+        <p id='stateName'></p>
+      </div>
+      <input id="phone_number" name="phone_number" class="textField" onkeyup="phone_number_validation(this.value)"
+        type="tel">
+    </div>
+    <p id='error'></p>
+    <button class="btn" type="button" onclick="submitFormHandler()">submit</button>
+  </form>
+  <script src="Index.js"></script>
+</body>
+
+</html>
