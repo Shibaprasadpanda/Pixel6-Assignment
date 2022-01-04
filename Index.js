@@ -75,8 +75,7 @@ function get_state_name(state_code){
               return "Lakshadweep"
           } else if (state_code >= "971") {
               return "Puducherry"
-          }
-          else if (state_code >= "981") {
+          } else if (state_code >= "981") {
               return "Ladakh"
           }
   
@@ -88,20 +87,20 @@ const manageServiceProvider = (serviceProvider, stateNumber, dom) => {
 
   // Set the service provider's logo if it is a genuine service provider.
   if (
-    Number(serviceProvider) >= 621 &&
-    Number(serviceProvider) <= 799 &&
+    Number(serviceProvider) >= 601 &&
+    Number(serviceProvider) <= 700 &&
     stateNumber === ""
   ) {
     img.src =
       "images/jio.png";
     dom.value = `(${serviceProvider})-`;
   } else if (
-    Number(serviceProvider) >= 801 &&
-    Number(serviceProvider) <= 920 &&
+    Number(serviceProvider) >= 701 &&
+    Number(serviceProvider) <= 800 &&
     stateNumber === ""
   ) {
     img.src =
-      "images/idea.png";
+      "images/airtel.jpg";
     dom.value = `(${serviceProvider})-`;
   } else if (
     Number(serviceProvider) >= 921 &&
